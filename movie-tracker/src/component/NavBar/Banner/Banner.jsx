@@ -22,7 +22,7 @@ const Banner = () => {
                         </span>
                     </h1>
 
-                    <p className="text-lg text-zinc-700 max-w-lg">
+                    <p className="text-lg max-w-lg">
                         Explore thousands of movies and series. Add them to your watchlist and never miss a great film again.
                     </p>
 
