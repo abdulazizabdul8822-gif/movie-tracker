@@ -66,7 +66,7 @@ const Simple = () => {
                         <p>🎭 Genre: Crime</p>
 
 
-                        <button className=' btn mt-4 w-full py-3 rounded-full bg-linear-to-r from-[#c01805] to-[#2800f3]text-white font-semibold'>
+                        <button className=' btn mt-4 w-full py-3 rounded-full bg-linear-to-r from-[#c01805] to-[#2800f3] text-white font-semibold'>
                             Add to Watchlist
                         </button>
                     </div>

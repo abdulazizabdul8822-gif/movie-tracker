@@ -6,20 +6,21 @@ import WorkSection from "./component/WorkSection/WorkSection"
 import Trending from "./component/Trending/Trending"
 import Footer from "./component/Footer/Footer"
 import MovieCart from "./component/MovieCart/MovieCart"
-import { Suspense, useState } from "react"
+import { Suspense,  useState } from "react"
 
 
 const getMovieCart = async () =>{
 
-  const res = await fetch("/public/movieData.json")
+  const res = await fetch("/movieData.json")
     return res.json()
 }
 
 
 
 function App() {
-  const [MovieCartPromise] = useState(() => getMovieCart())
 
+  const [MovieCartPromise] = useState(() => getMovieCart())
+   
   return (
     <>
       <NavBar/>
