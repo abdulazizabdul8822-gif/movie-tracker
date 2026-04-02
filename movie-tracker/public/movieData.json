@@ -10,7 +10,7 @@
     "status": "Movie",
     "tag": "Popular",
     "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
-    "image": "inception.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
     "status": "Movie",
     "tag": "Popular",
     "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
-    "image": "interstellar.webp"
+    "image": "https://i.ibb.co.com/KxCGVQk6/2.webp"
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
     "status": "Movie",
     "tag": "Top Rated",
     "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-    "image": "darkknight.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
     "status": "Movie",
     "tag": "New",
     "cast": ["Cillian Murphy", "Emily Blunt", "Matt Damon"],
-    "image": "oppenheimer.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Álvaro Morte", "Úrsula Corberó", "Itziar Ituño"],
-    "image": "moneyhist.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
     "status": "Series",
     "tag": "Top Rated",
     "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
-    "image": "breakingbad.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"],
-    "image": "strangerthings.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Cillian Murphy", "Paul Anderson", "Helen McCrory"],
-    "image": "peakyblinders.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 9,
@@ -114,7 +114,7 @@
     "status": "Movie",
     "tag": "Popular",
     "cast": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
-    "image": "endgame.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 10,
@@ -127,7 +127,7 @@
     "status": "Series",
     "tag": "Top Rated",
     "cast": ["Emilia Clarke", "Kit Harington", "Peter Dinklage"],
-    "image": "gameofthrones.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
 
   {
@@ -141,7 +141,7 @@
     "status": "Movie",
     "tag": "New",
     "cast": ["Shameik Moore", "Hailee Steinfeld", "Oscar Isaac"],
-    "image": "spiderverse.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 12,
@@ -154,7 +154,7 @@
     "status": "Movie",
     "tag": "Popular",
     "cast": ["Ryunosuke Kamiki", "Mone Kamishiraishi"],
-    "image": "yourname.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 13,
@@ -167,7 +167,7 @@
     "status": "Series",
     "tag": "Top Rated",
     "cast": ["Yuki Kaji", "Marina Inoue", "Yui Ishikawa"],
-    "image": "attackontitan.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 14,
@@ -180,7 +180,7 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Natsuki Hanae", "Akari Kito", "Hiro Shimono"],
-    "image": "demonslayer.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   },
   {
     "id": 15,
@@ -193,6 +193,6 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Mayumi Tanaka", "Kazuya Nakai", "Akemi Okamura"],
-    "image": "onepiece.webp"
+    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
   }
 ]
