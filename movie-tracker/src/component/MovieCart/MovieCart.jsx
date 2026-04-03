@@ -1,7 +1,7 @@
 import React, { use, } from 'react';
 import MovieModelCart from '../MovieModelCart/MovieModelCart';
 
-const MovieCart = ({ MovieCartPromise }) => {
+const MovieCart = ({ MovieCartPromise, carts, setCarts }) => {
 
     
     const movieCarts = use(MovieCartPromise)
@@ -23,7 +23,7 @@ const MovieCart = ({ MovieCartPromise }) => {
                     movieCarts.map(movie => (
 
                         // 🔥 Single Card
-                        <MovieModelCart movie={movie}/>
+                        <MovieModelCart key={movie.id} movie={movie} carts={carts} setCarts={setCarts}/>
                     ))
                 }
 

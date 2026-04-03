@@ -6,37 +6,57 @@ import WorkSection from "./component/WorkSection/WorkSection"
 import Trending from "./component/Trending/Trending"
 import Footer from "./component/Footer/Footer"
 import MovieCart from "./component/MovieCart/MovieCart"
-import { Suspense,  useState } from "react"
+import { Suspense, useState } from "react"
+import Cart from "./component/Cart/Cart"
 
 
-const getMovieCart = async () =>{
+const getMovieCart = async () => {
 
   const res = await fetch("/movieData.json")
-    return res.json()
+  return res.json()
 }
 
 
 
 function App() {
 
-  const [MovieCartPromise] = useState(() => getMovieCart())
-   
+  const [MovieCartPromise] = useState(() => getMovieCart());
+
+  const [activeTab, setActiveTab] = useState("Movies");
+
+  const [carts, setCarts] = useState([])
+  console.log(carts)
+
+
+
   return (
     <>
-      <NavBar/>
-      <Banner/>
+      <NavBar />
+      <Banner />
+
+
+      <div role="tablist" className="tabs tabs-lift justify-center gap-4 mb-10">
+        <a onClick={() => setActiveTab("Movies")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Movies" ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : ""}`}>Movies</a>
+
+        <a onClick={() => setActiveTab("WatchList")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "WatchList" ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : ""}`}>WatchList</a>
+      </div>
+
       <Suspense fallback={<div className="flex justify-center items-center min-h-[200px]"><span className="loading loading-ring loading-xl"></span></div>}>
-        <MovieCart MovieCartPromise={MovieCartPromise}/>
+        {activeTab === "Movies" && <MovieCart MovieCartPromise={MovieCartPromise} carts={carts} setCarts={setCarts} />}
       </Suspense>
-      <Rating/>
-      <Filter/>
 
-      <WorkSection/>
+      {activeTab === "WatchList" && <Cart carts={carts}/>}
 
-      <Trending/>
+      <Rating />
 
-      <Footer/>
-      
+      <Filter />
+
+      <WorkSection />
+
+      <Trending />
+
+      <Footer />
+
     </>
   )
 }
