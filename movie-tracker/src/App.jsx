@@ -6,8 +6,9 @@ import WorkSection from "./component/WorkSection/WorkSection"
 import Trending from "./component/Trending/Trending"
 import Footer from "./component/Footer/Footer"
 import MovieCart from "./component/MovieCart/MovieCart"
-import { Suspense, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import Cart from "./component/Cart/Cart"
+import Cta from "./component/Cta/Cta"
 
 
 const getMovieCart = async () => {
@@ -30,10 +31,21 @@ function App() {
   const [search, setSearch] = useState("");
 
 
+    // ← নতুন: movies state
+  const [movies, setMovies] = useState([])
+
+  // ← নতুন: data load করো
+  useEffect(() => {
+    fetch("/movieData.json")
+      .then(res => res.json())
+      .then(data => setMovies(data))
+  }, [])
+
+
 
   return (
     <>
-      <NavBar search={search} setSearch={setSearch} />
+      <NavBar search={search} setSearch={setSearch}  movies={movies}/>
 
       {activeTab === "WatchList" ? (
         <> 
@@ -73,9 +85,10 @@ function App() {
           <Trending />
 
           
-
+        
         </>
       )}
+      <Cta/>
       <Footer />
     </>
   )

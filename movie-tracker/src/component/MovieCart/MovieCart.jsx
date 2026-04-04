@@ -16,7 +16,7 @@ const MovieCart = ({ MovieCartPromise, carts, setCarts, search }) => {
 
             {/* 🔥 Section Title */}
             <h2 className="text-3xl font-bold text-center mb-10">
-                🎬 All Movies & Series
+                <span className=' animate-ping'>🎬</span> All Movies & Series
             </h2>
 
             {/* 🔥 Grid Layout */}

@@ -11,7 +11,7 @@ const Banner = () => {
                 {/* Left Content */}
                 <div className=" space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
                     <div className="inline-flex items-center gap-2 bg-[#c01805]/10 border border-[#2800f3]/30 text-[#c01805] text-sm font-medium px-5 py-2 rounded-full">
-                        <span><img className=' animate-pulse' src="" alt="" /></span>🎬 New: Trending Movies & Series Added
+                        <span className=' animate-ping'>🎬</span> New: Trending Movies & Series Added
                     </div>
 
                     <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter text-[#c01805]">
@@ -31,7 +31,7 @@ const Banner = () => {
                             Browse Movies
                         </button>
                         <button className=" bg-linear-to-r from-[#c01805] to-[#2800f3] bg-clip-text text-transparent flex gap-3 justify-center items-center btn btn-outline btn-primary px-3 py-6 rounded-full">
-                            <span className="group-hover:translate-x-1 transition"><img src="" alt="" /></span>
+                            <span className="group-hover:translate-x-1 transition"></span>
                             View Trending
 
 

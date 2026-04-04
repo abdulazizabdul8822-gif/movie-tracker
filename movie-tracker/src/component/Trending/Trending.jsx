@@ -29,7 +29,7 @@ const Simple = () => {
 
 
                         <button className=' btn mt-4 w-full py-3 rounded-full bg-linear-to-r from-[#c01805] to-[#2800f3] text-white font-semibold'>
-                            Get Started Free
+                            Add to WatchList
                         </button>
                     </div>
 
@@ -51,7 +51,7 @@ const Simple = () => {
 
 
                         <button className=' btn mt-4 w-full py-3 rounded-full bg-white text-red-700 font-semibold'>
-                            Start Pro Trial
+                            Add to WatchList
                         </button>
                     </div>
 
@@ -67,7 +67,7 @@ const Simple = () => {
 
 
                         <button className=' btn mt-4 w-full py-3 rounded-full bg-linear-to-r from-[#c01805] to-[#2800f3] text-white font-semibold'>
-                            Add to Watchlist
+                             Add to WatchList
                         </button>
                     </div>
 
