@@ -27,36 +27,56 @@ function App() {
   const [carts, setCarts] = useState([])
   console.log(carts)
 
+  const [search, setSearch] = useState("");
+
 
 
   return (
     <>
-      <NavBar />
-      <Banner />
+      <NavBar search={search} setSearch={setSearch} />
+
+      {activeTab === "WatchList" ? (
+        <> 
+        <div role="tablist" className="tabs tabs-lift justify-center gap-4 mt-30">
+            <a onClick={() => setActiveTab("Movies")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Movies" ? "tab-active text-white bg-linear-to-r from-[#f63939] to-[#1c14fa]" : ""}`}>Movies</a>
+
+            <a onClick={() => setActiveTab("WatchList")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "WatchList" ? "tab-active text-white bg-linear-to-r from-[#a70202] to-[#4000ff]" : ""}`}>{`Cart (${carts.length})`}</a>
+          </div>
+
+          <Cart carts={carts} setCarts={setCarts} search={search} />
+        </>
+        
+      ) : (
+
+        <>
+          <Banner />
 
 
-      <div role="tablist" className="tabs tabs-lift justify-center gap-4 mb-10">
-        <a onClick={() => setActiveTab("Movies")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Movies" ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : ""}`}>Movies</a>
+          <div role="tablist" className="tabs tabs-lift justify-center gap-4 mb-10">
+            <a onClick={() => setActiveTab("Movies")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Movies" ? "tab-active text-white bg-linear-to-r from-[#f63939] to-[#1c14fa]" : ""}`}>Movies</a>
 
-        <a onClick={() => setActiveTab("WatchList")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "WatchList" ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : ""}`}>WatchList</a>
-      </div>
+            <a onClick={() => setActiveTab("WatchList")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "WatchList" ? "tab-active text-white bg-linear-to-r from-[#a70202] to-[#4000ff]" : ""}`}>{`Cart (${carts.length})`}</a>
+          </div>
 
-      <Suspense fallback={<div className="flex justify-center items-center min-h-[200px]"><span className="loading loading-ring loading-xl"></span></div>}>
-        {activeTab === "Movies" && <MovieCart MovieCartPromise={MovieCartPromise} carts={carts} setCarts={setCarts} />}
-      </Suspense>
+          <Suspense fallback={<div className="flex justify-center items-center min-h-[200px]"><span className="loading loading-ring loading-xl"></span></div>}>
+            {activeTab === "Movies" && <MovieCart MovieCartPromise={MovieCartPromise} carts={carts} setCarts={setCarts} search={search} />}
+          </Suspense>
 
-      {activeTab === "WatchList" && <Cart carts={carts}/>}
 
-      <Rating />
 
-      <Filter />
+          <Rating />
 
-      <WorkSection />
+          <Filter />
 
-      <Trending />
+          <WorkSection />
 
+          <Trending />
+
+          
+
+        </>
+      )}
       <Footer />
-
     </>
   )
 }

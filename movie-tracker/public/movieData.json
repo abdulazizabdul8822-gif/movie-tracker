@@ -36,7 +36,7 @@
     "status": "Movie",
     "tag": "Top Rated",
     "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/VcxFGshf/3.webp"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
     "status": "Movie",
     "tag": "New",
     "cast": ["Cillian Murphy", "Emily Blunt", "Matt Damon"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/1gJn8xJ/5.webp"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Álvaro Morte", "Úrsula Corberó", "Itziar Ituño"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/PsWNsktg/7.webp"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
     "status": "Series",
     "tag": "Top Rated",
     "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/wN7Mdrnx/6.webp"
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/Lhx9bmkc/8.webp"
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Cillian Murphy", "Paul Anderson", "Helen McCrory"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/Z6J3QFpB/10.webp"
   },
   {
     "id": 9,
@@ -114,7 +114,7 @@
     "status": "Movie",
     "tag": "Popular",
     "cast": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/999CQz4Q/4.webp"
   },
   {
     "id": 10,
@@ -127,7 +127,7 @@
     "status": "Series",
     "tag": "Top Rated",
     "cast": ["Emilia Clarke", "Kit Harington", "Peter Dinklage"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/GvysthGP/9.webp"
   },
 
   {
@@ -141,7 +141,7 @@
     "status": "Movie",
     "tag": "New",
     "cast": ["Shameik Moore", "Hailee Steinfeld", "Oscar Isaac"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/QFLzPQWp/11.webp"
   },
   {
     "id": 12,
@@ -154,7 +154,7 @@
     "status": "Movie",
     "tag": "Popular",
     "cast": ["Ryunosuke Kamiki", "Mone Kamishiraishi"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/9x2Sgt4/12.webp"
   },
   {
     "id": 13,
@@ -167,7 +167,7 @@
     "status": "Series",
     "tag": "Top Rated",
     "cast": ["Yuki Kaji", "Marina Inoue", "Yui Ishikawa"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/1t676wmm/13.webp"
   },
   {
     "id": 14,
@@ -180,7 +180,7 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Natsuki Hanae", "Akari Kito", "Hiro Shimono"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/KxdDxzd9/14.webp"
   },
   {
     "id": 15,
@@ -193,6 +193,6 @@
     "status": "Series",
     "tag": "Popular",
     "cast": ["Mayumi Tanaka", "Kazuya Nakai", "Akemi Okamura"],
-    "image": "https://i.ibb.co.com/4nHVs6dL/1.webp"
+    "image": "https://i.ibb.co.com/trzqM0T/15.webp"
   }
 ]

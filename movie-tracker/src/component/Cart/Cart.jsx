@@ -1,15 +1,23 @@
 import React from 'react';
 import { MdOutlineBookmark } from 'react-icons/md';
+import { toast } from 'react-toastify';
 
-const Cart = ({ carts, setCarts }) => {
+const Cart = ({ carts, setCarts, search }) => {
+
+   const filtered = carts.filter(movie =>
+        movie.title.toLowerCase().includes(search.toLowerCase())
+    )
+
 
     const handleRemove = (removeItem) => {
         const filtered = carts.filter(c => c.id !== removeItem.id)
         setCarts(filtered)
+        toast.error("Removed from Watchlist!")
     }
 
     const handleClearAll = () => {
         setCarts([])
+        toast.success("Watchlist cleared!")
     }
 
     return (
@@ -39,7 +47,7 @@ const Cart = ({ carts, setCarts }) => {
                 </div>
             ) : (
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-                    {carts.map((movie) => (
+                    {filtered.map((movie) => (
                         <div key={movie.id} className='shadow-lg rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105'>
 
                             {/* Image */}
@@ -76,6 +84,7 @@ const Cart = ({ carts, setCarts }) => {
                             </div>
                         </div>
                     ))}
+
                 </div>
             )}
         </div>

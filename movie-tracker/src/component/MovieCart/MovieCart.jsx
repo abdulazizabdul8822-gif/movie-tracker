@@ -1,10 +1,13 @@
 import React, { use, } from 'react';
 import MovieModelCart from '../MovieModelCart/MovieModelCart';
 
-const MovieCart = ({ MovieCartPromise, carts, setCarts }) => {
+const MovieCart = ({ MovieCartPromise, carts, setCarts, search }) => {
 
     
     const movieCarts = use(MovieCartPromise)
+    const filtered = movieCarts.filter(movie =>
+        movie.title.toLowerCase().includes(search.toLowerCase())
+    )
 
     
 
@@ -20,7 +23,7 @@ const MovieCart = ({ MovieCartPromise, carts, setCarts }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
                 {
-                    movieCarts.map(movie => (
+                    filtered.map(movie => (
 
                         // 🔥 Single Card
                         <MovieModelCart key={movie.id} movie={movie} carts={carts} setCarts={setCarts}/>

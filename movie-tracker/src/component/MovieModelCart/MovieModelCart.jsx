@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import MovieCart from '../MovieCart/MovieCart';
+import { toast } from 'react-toastify';
 
 const MovieModelCart = ({ movie, carts, setCarts}) => {
     const [isWatchList, setIsWatchList] = useState(false)
+
    const handleSubScription = () => {
     const isFound = carts.find(item => item.id === movie.id)
     if(isFound) return
     setIsWatchList(true)
-    setCarts([...carts, movie])  // ← এটা ঠিক করো
+    setCarts([...carts, movie]) 
+
+    toast.success("Added to Watchlist! 🎬")
 }
     return (
         <div
