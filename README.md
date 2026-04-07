@@ -10,8 +10,15 @@
 [![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=flat-square&logo=vite)](https://vitejs.dev)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38BDF8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com)
 [![DaisyUI](https://img.shields.io/badge/DaisyUI-Latest-5A0EF8?style=flat-square)](https://daisyui.com)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Now-brightgreen?style=flat-square)](https://cinetrack-az0.netlify.app)
 
 </div>
+
+---
+
+## 🚀 Live Demo
+
+🔗 **[https://cinetrack-az0.netlify.app](https://cinetrack-az0.netlify.app)**
 
 ---
 
@@ -181,8 +188,9 @@ Build হলে `dist/` ফোল্ডারে পাবে।
 
 ## 👨‍💻 Author
 
-**Abdul Aziz**
-- GitHub: [@abdulazizabdul8822-gif](https://github.com/abdulazizabdul8822-gif)
+**Md Azizul Islam**
+- GitHub: [@abdulazizabdul8822-gif](https://github.com/abdulazizabdul8822-gif/movie-tracker)
+- Live: [cinetrack-az0.netlify.app](https://cinetrack-az0.netlify.app)
 
 ---
 
