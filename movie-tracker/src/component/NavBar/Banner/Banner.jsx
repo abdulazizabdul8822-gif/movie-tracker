@@ -46,7 +46,8 @@ const Banner = () => {
                             autoplay
                             loop
                             src={animationData}
-                            style={{ height: '600px', width: '500px' }}
+                            className="w-64 h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px]"
+                            style={{ height: 'auto', width: 'auto' }}
                         />
                     </div>
                 </div>

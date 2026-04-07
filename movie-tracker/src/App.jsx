@@ -31,10 +31,10 @@ function App() {
   const [search, setSearch] = useState("");
 
 
-    // ← নতুন: movies state
+  
   const [movies, setMovies] = useState([])
 
-  // ← নতুন: data load করো
+
   useEffect(() => {
     fetch("/movieData.json")
       .then(res => res.json())
@@ -46,6 +46,8 @@ function App() {
   return (
     <>
       <NavBar search={search} setSearch={setSearch}  movies={movies}/>
+
+      
 
       {activeTab === "WatchList" ? (
         <> 
@@ -63,7 +65,7 @@ function App() {
         <>
           <Banner />
 
-
+           <Filter />
           <div role="tablist" className="tabs tabs-lift justify-center gap-4 mb-10">
             <a onClick={() => setActiveTab("Movies")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Movies" ? "tab-active text-white bg-linear-to-r from-[#f63939] to-[#1c14fa]" : ""}`}>Movies</a>
 
@@ -76,9 +78,9 @@ function App() {
 
 
 
-          <Rating />
+          
 
-          <Filter />
+         
 
           <WorkSection />
 
@@ -88,6 +90,7 @@ function App() {
         
         </>
       )}
+      {/* <Rating /> */}
       <Cta/>
       <Footer />
     </>
