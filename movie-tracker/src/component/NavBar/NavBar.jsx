@@ -8,13 +8,13 @@ const NavBar = ({ search, setSearch, movies }) => {
     const [searchHistory, setSearchHistory] = useState([])
     const [showDropdown, setShowDropdown] = useState(false)
 
-    // টাইপ করলে movie নাম থেকে suggestion
+   
     const suggestions = movies.filter(movie =>
         search.length > 0 &&
         movie.title.toLowerCase().startsWith(search.toLowerCase())
     ).slice(0, 5)
 
-    // Enter চাপলে history তে save হবে
+    
     const handleKeyDown = (e) => {
         if (e.key === "Enter" && search.trim() !== "") {
             if (!searchHistory.includes(search)) {
@@ -24,13 +24,13 @@ const NavBar = ({ search, setSearch, movies }) => {
         }
     }
 
-    // History item click
+    
     const handleHistoryClick = (item) => {
         setSearch(item)
         setShowDropdown(false)
     }
 
-    // History delete
+    
     const handleDeleteHistory = (item) => {
         setSearchHistory(searchHistory.filter(h => h !== item))
     }
@@ -49,7 +49,7 @@ const NavBar = ({ search, setSearch, movies }) => {
 
                 <div className="flex gap-2 items-center">
 
-                    {/* Search Input + Dropdown */}
+                    
                     <div className="relative">
                         <input
                             type="text"
@@ -65,11 +65,11 @@ const NavBar = ({ search, setSearch, movies }) => {
                             className="input input-bordered w-24 md:w-64"
                         />
 
-                        {/* Dropdown */}
+                        
                         {showDropdown && (suggestions.length > 0 || searchHistory.length > 0) && (
                             <div className="absolute top-12 left-0 w-full bg-white shadow-lg rounded-xl z-50 overflow-hidden border border-gray-100">
 
-                                {/* Live Suggestions */}
+                                
                                 {suggestions.length > 0 && (
                                     <>
                                         
@@ -91,7 +91,7 @@ const NavBar = ({ search, setSearch, movies }) => {
                                     </>
                                 )}
 
-                                {/* Recent Searches — search খালি থাকলে দেখাবে */}
+                                
                                 {searchHistory.length > 0 && search.length === 0 && (
                                     <>
                                         <p className="text-xs text-gray-400 px-4 pt-2 pb-1">🕐 Recent Searches</p>
@@ -116,7 +116,7 @@ const NavBar = ({ search, setSearch, movies }) => {
                         )}
                     </div>
 
-                    {/* Avatar */}
+                    
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
